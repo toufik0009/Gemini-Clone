@@ -1,0 +1,189 @@
+.main {
+  flex: 1;
+  min-height: 100vh;
+  padding-bottom: 15vh;
+  position: relative;
+}
+.main .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  padding: 20px;
+  color: #585858;
+}
+.main .nav .userIcon {
+  width: 40px;
+}
+.cardIcons {
+  font-size: 2.2rem;
+}
+.mainContainer {
+  max-width: 900px;
+  margin: auto;
+}
+.main .greet {
+  margin: 50px 0px;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 20px;
+}
+.main .greet span {
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.main .card {
+  height: 200px;
+  padding: 15px;
+  background-color: #f0f4f9;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.main .card .cardIcons {
+  width: 40px;
+  padding: 5px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 10px;
+  /* border-bottom-right-radius: 10px; */
+  bottom: 0px;
+  right: 0px;
+}
+.main .card .compassIcon {
+  background-color: rgb(137, 255, 47);
+}
+.main .card .bulbIcon {
+  background-color: orange;
+}
+.main .card .messageIcon {
+  background-color: steelblue;
+}
+.main .card .codeIcon {
+  background-color: rgb(240, 47, 185);
+}
+.main .card p {
+  color: #585858;
+  font-size: 17px;
+}
+.main .card:hover {
+  background-color: #dfe4ea;
+}
+
+.mainBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 900px;
+  padding: 0px 20px;
+  margin: auto;
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f0f4f9;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.searchBox .BottomIcon {
+  width: 35px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.searchBox input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+}
+.sendIcon{
+    color: rgb(3, 151, 11);
+}
+.galleryIcon{
+    color: rgb(164, 164, 164);
+}
+.micIcon{
+    color: rgb(164, 164, 164);
+}
+
+.searchBox div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.main .bottomInfo {
+  font-size: 13px;
+  margin: 15px auto;
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+}
+
+.result {
+  padding: 0 5%;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+.result::-webkit-scrollbar {
+  display: none;
+}
+.result-title {
+  margin: 40px 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.resultIcon,
+.starIcon {
+  font-size: 1.8rem;
+ color: #134697;
+}
+
+.resultData{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.loading{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.loading hr{
+    border-radius: 5px;
+    border: none;
+    background-color: #4b90ff;
+    background: linear-gradient(16deg,skyblue,rgb(122, 151, 158),rgb(202, 236, 214));
+    background-size: 800px 50px;
+    height: 20px;
+    animation: anim 2s ease-in infinite;
+}
+@keyframes anim {
+    0%{
+      background-position: -800px 0px;  
+    }
+    
+    100%{
+        background-position: 800px 0px;  
+    }
+}
+
+.resultData p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+}
