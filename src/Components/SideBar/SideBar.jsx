@@ -14,12 +14,6 @@ function SideBar() {
 
     const { onSent, prevPrompts, setRecentPrompt,newChat } = useContext(Context)
 
-    const loadPrompt=async()=>{
-       setRecentPrompt(prompt)
-        await onSent(prompt)
-
-    }
-
     return (
         <div className='sidebar'>
             <div className="top">
